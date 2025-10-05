@@ -1,0 +1,627 @@
+{
+  "projects": [
+    {
+      "id": "ongoing-1",
+      "title": "Civil Works at Faculty Housing Project",
+      "description": "Civil Works at faculty housing project",
+      "detailedDescription": "Comprehensive civil works for faculty housing project including foundation, structural work, and site development.",
+      "client": "KAAU Jeddah",
+      "location": "Jeddah",
+      "startDate": "2024-01-15",
+      "endDate": "2024-12-31",
+      "status": "in-progress",
+      "category": "civil",
+      "budget": "5,000,000",
+      "images": [
+        "/images/projects/imgi_2_1.jpg",
+        "/images/projects/imgi_3_2.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "General Contracting"
+      ],
+      "createdAt": "2024-01-10T10:00:00Z",
+      "updatedAt": "2024-12-20T15:30:00Z"
+    },
+    {
+      "id": "ongoing-2",
+      "title": "KAAU MEP Works",
+      "description": "KAAU -MP Works",
+      "detailedDescription": "Complete MEP (Mechanical, Electrical, Plumbing) works for KAAU project including HVAC, electrical systems, and plumbing infrastructure.",
+      "client": "Al -Bawani Tuwal",
+      "location": "Jeddah",
+      "startDate": "2024-02-01",
+      "endDate": "2024-11-30",
+      "status": "in-progress",
+      "category": "mep",
+      "budget": "3,500,000",
+      "images": [
+        "/images/projects/imgi_4_3.jpg",
+        "/images/projects/imgi_5_5.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Electro Works"
+      ],
+      "createdAt": "2024-01-20T09:00:00Z",
+      "updatedAt": "2024-12-15T12:00:00Z"
+    },
+    {
+      "id": "ongoing-3",
+      "title": "MEP Firefighting, Plumbing and Duct Works",
+      "description": "MEP-Firefighting,Plumbing and Duct works",
+      "detailedDescription": "Specialized MEP works including firefighting systems, plumbing infrastructure, and duct work installation.",
+      "client": "Al-bawa tuwal",
+      "location": "Jeddah",
+      "startDate": "2024-03-01",
+      "endDate": "2024-10-31",
+      "status": "in-progress",
+      "category": "mep",
+      "budget": "2,800,000",
+      "images": [
+        "/images/projects/imgi_6_6.jpg",
+        "/images/projects/imgi_7_7.png"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Fire Fighting Systems"
+      ],
+      "createdAt": "2024-02-15T08:00:00Z",
+      "updatedAt": "2024-12-10T14:20:00Z"
+    },
+    {
+      "id": "ongoing-4",
+      "title": "MEP Works Smoke Exhaust Fans and Exhaust Ducting System",
+      "description": "MEP Works Smoke Exhaust fans and Exhaust Ducting System",
+      "detailedDescription": "Installation of specialized smoke exhaust fans and comprehensive exhaust ducting system for hospital facility.",
+      "client": "Jeddah National Hospital",
+      "location": "Jeddah",
+      "startDate": "2024-04-01",
+      "endDate": "2024-09-30",
+      "status": "in-progress",
+      "category": "mep",
+      "budget": "1,500,000",
+      "images": [
+        "/images/projects/imgi_8_12.png"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "HVAC Systems"
+      ],
+      "createdAt": "2024-03-20T11:00:00Z",
+      "updatedAt": "2024-12-05T09:45:00Z"
+    },
+    {
+      "id": "ongoing-5",
+      "title": "MEP Works Firefighting System, Security System",
+      "description": "MEP Works Firefighting System, Security System",
+      "detailedDescription": "Comprehensive firefighting and security system installation for GNP facilities in Jeddah and Abha.",
+      "client": "GNP Jeddah,Abha",
+      "location": "Abha",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-31",
+      "status": "in-progress",
+      "category": "mep",
+      "budget": "2,200,000",
+      "images": [
+        "/images/projects/imgi_2_1.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Security Systems"
+      ],
+      "createdAt": "2024-04-15T10:30:00Z",
+      "updatedAt": "2024-12-01T16:15:00Z"
+    },
+    {
+      "id": "ongoing-6",
+      "title": "MEP Works Fire Alarm, Firefighting System, Security System and Maintenance",
+      "description": "MEP Works Fire Alram,Firefighting System, Security System and maintenance",
+      "detailedDescription": "Complete fire alarm, firefighting, and security system installation with ongoing maintenance services for Al Nahdi markets.",
+      "client": "Al nahdi markets Jeddah",
+      "location": "Jeddah",
+      "startDate": "2024-06-01",
+      "endDate": "2024-07-31",
+      "status": "in-progress",
+      "category": "mep",
+      "budget": "1,800,000",
+      "images": [
+        "/images/projects/imgi_3_2.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Fire Fighting Systems",
+        "Security Systems"
+      ],
+      "createdAt": "2024-05-20T14:00:00Z",
+      "updatedAt": "2024-11-28T11:30:00Z"
+    },
+    {
+      "id": "ongoing-7",
+      "title": "Dareen East Beach Phase 2 and Park Improvement Jubail KSA",
+      "description": "Dareen East Beach Phase 2 and Park imporvement Jubail Ksa",
+      "detailedDescription": "Phase 2 development of Dareen East Beach including park improvements and recreational facilities in Jubail.",
+      "client": "Al Ayuni Investment and contracting Co.",
+      "location": "Jeddah",
+      "startDate": "2024-07-01",
+      "endDate": "2024-12-31",
+      "status": "in-progress",
+      "category": "civil",
+      "budget": "4,500,000",
+      "images": [
+        "/images/projects/imgi_4_3.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "General Contracting"
+      ],
+      "createdAt": "2024-06-15T09:15:00Z",
+      "updatedAt": "2024-11-25T13:45:00Z"
+    },
+    {
+      "id": "ongoing-8",
+      "title": "MEP Works-HVAC Supply and Installation",
+      "description": "MEP Works-HVAC Supply and Installation",
+      "detailedDescription": "Complete HVAC system supply and installation for Gulf Group facilities in Qunfunda.",
+      "client": "Gulf Group",
+      "location": "Qunfunda",
+      "startDate": "2024-08-01",
+      "endDate": "2024-11-30",
+      "status": "in-progress",
+      "category": "mep",
+      "budget": "3,200,000",
+      "images": [
+        "/images/projects/imgi_5_5.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "HVAC Systems"
+      ],
+      "createdAt": "2024-07-20T12:30:00Z",
+      "updatedAt": "2024-11-20T15:20:00Z"
+    },
+    {
+      "id": "ongoing-9",
+      "title": "Structural Steel Installation",
+      "description": "Structural Steel Installation",
+      "detailedDescription": "Structural steel installation for Othaim Mall expansion project in Al-Khobar.",
+      "client": "Othaim Mall",
+      "location": "Al-Khobar",
+      "startDate": "2024-09-01",
+      "endDate": "2024-12-31",
+      "status": "in-progress",
+      "category": "structural",
+      "budget": "6,000,000",
+      "images": [
+        "/images/projects/imgi_6_6.jpg"
+      ],
+      "services": [
+        "Structural Works",
+        "Heavy Equipment"
+      ],
+      "createdAt": "2024-08-25T16:00:00Z",
+      "updatedAt": "2024-11-15T10:10:00Z"
+    },
+    {
+      "id": "ongoing-10",
+      "title": "Aramco Hosting Project- Civil Works",
+      "description": "Aramco Hosting Project- civil works",
+      "detailedDescription": "Civil works for Aramco hosting project including site preparation, foundation work, and infrastructure development.",
+      "client": "Othaim mall",
+      "location": "Al-Khobar",
+      "startDate": "2024-10-01",
+      "endDate": "2025-03-31",
+      "status": "in-progress",
+      "category": "civil",
+      "budget": "8,000,000",
+      "images": [
+        "/images/projects/imgi_7_7.png"
+      ],
+      "services": [
+        "Civil Works",
+        "General Contracting"
+      ],
+      "createdAt": "2024-09-20T11:45:00Z",
+      "updatedAt": "2024-11-10T14:30:00Z"
+    },
+    {
+      "id": "completed-1",
+      "title": "MEP Works - Electrical Installations",
+      "description": "MEP Works -Electrical Installations",
+      "detailedDescription": "Complete electrical installations for SWCC-SHOIBA facility including power distribution, lighting, and control systems.",
+      "client": "SWCC-SHOIBA",
+      "location": "SHOIBA",
+      "startDate": "2023-01-15",
+      "endDate": "2023-08-30",
+      "status": "completed",
+      "category": "mep",
+      "budget": "2,500,000",
+      "images": [
+        "/images/projects/imgi_2_1.jpg"
+      ],
+      "services": [
+        "Electro Works",
+        "Electro Mechanical Works"
+      ],
+      "createdAt": "2023-01-10T10:00:00Z",
+      "updatedAt": "2023-08-30T15:30:00Z"
+    },
+    {
+      "id": "completed-2",
+      "title": "MEP Works-Fire Fighting & HVAC",
+      "description": "MEP Works-Fire Fighting & HVAC",
+      "detailedDescription": "Fire fighting and HVAC system installation for Dallah facility in Madina.",
+      "client": "Dallah",
+      "location": "Madina",
+      "startDate": "2023-03-01",
+      "endDate": "2023-10-15",
+      "status": "completed",
+      "category": "mep",
+      "budget": "3,200,000",
+      "images": [
+        "/images/projects/imgi_3_2.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Fire Fighting Systems"
+      ],
+      "createdAt": "2023-02-20T09:00:00Z",
+      "updatedAt": "2023-10-15T12:00:00Z"
+    },
+    {
+      "id": "completed-3",
+      "title": "MEP Works-Fire Fighting & HVAC - Binladin",
+      "description": "MEP Works-Fire Fighting & HVAC",
+      "detailedDescription": "Fire fighting and HVAC system installation for Binladin project in Jeddah.",
+      "client": "Binladin",
+      "location": "Jeddah",
+      "startDate": "2023-04-01",
+      "endDate": "2023-11-20",
+      "status": "completed",
+      "category": "mep",
+      "budget": "4,100,000",
+      "images": [
+        "/images/projects/imgi_4_3.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Fire Fighting Systems"
+      ],
+      "createdAt": "2023-03-25T08:00:00Z",
+      "updatedAt": "2023-11-20T14:20:00Z"
+    },
+    {
+      "id": "completed-4",
+      "title": "BMS System & HVAC",
+      "description": "BMS Sustem & HVAC",
+      "detailedDescription": "Building Management System and HVAC installation for Al Amoudi Est facility in Jeddah.",
+      "client": "Al Amoudi Est",
+      "location": "Jeddah",
+      "startDate": "2023-05-15",
+      "endDate": "2023-12-10",
+      "status": "completed",
+      "category": "mep",
+      "budget": "2,800,000",
+      "images": [
+        "/images/projects/imgi_5_5.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "BMS Systems"
+      ],
+      "createdAt": "2023-05-10T11:00:00Z",
+      "updatedAt": "2023-12-10T09:45:00Z"
+    },
+    {
+      "id": "completed-5",
+      "title": "Ventilation System & HVAC",
+      "description": "Ventilation System &Hvac",
+      "detailedDescription": "Specialized ventilation system and HVAC installation for AlZahi Co facility in Jeddah.",
+      "client": "AlZahi Co",
+      "location": "Jeddah",
+      "startDate": "2023-06-01",
+      "endDate": "2023-09-30",
+      "status": "completed",
+      "category": "mep",
+      "budget": "1,900,000",
+      "images": [
+        "/images/projects/imgi_6_6.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Ventilation Systems"
+      ],
+      "createdAt": "2023-05-25T14:30:00Z",
+      "updatedAt": "2023-09-30T16:15:00Z"
+    },
+    {
+      "id": "completed-6",
+      "title": "MEP Works HVAC and Electrical",
+      "description": "MEP Works Hvac and Electrical",
+      "detailedDescription": "HVAC and electrical works for Zamil Cool Care facility in Makka.",
+      "client": "Zamil Cool Care",
+      "location": "Makka",
+      "startDate": "2023-07-01",
+      "endDate": "2023-10-31",
+      "status": "completed",
+      "category": "mep",
+      "budget": "2,600,000",
+      "images": [
+        "/images/projects/imgi_7_7.png"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Electro Works"
+      ],
+      "createdAt": "2023-06-20T10:15:00Z",
+      "updatedAt": "2023-10-31T11:30:00Z"
+    },
+    {
+      "id": "completed-7",
+      "title": "Under Ground Piping RTR & FRP",
+      "description": "Under Ground Piping RTR & FRP",
+      "detailedDescription": "Underground piping installation using RTR (Reinforced Thermosetting Resin) and FRP (Fiber Reinforced Plastic) materials for Parrows facility in Madina.",
+      "client": "Parrows",
+      "location": "Madina",
+      "startDate": "2023-08-01",
+      "endDate": "2023-11-15",
+      "status": "completed",
+      "category": "civil",
+      "budget": "3,500,000",
+      "images": [
+        "/images/projects/imgi_8_12.png"
+      ],
+      "services": [
+        "Civil Works",
+        "Piping Systems"
+      ],
+      "createdAt": "2023-07-25T13:45:00Z",
+      "updatedAt": "2023-11-15T14:20:00Z"
+    },
+    {
+      "id": "completed-8",
+      "title": "Site Development and Piping Works",
+      "description": "Site Development and piping works",
+      "detailedDescription": "Site development and piping works for Rabiya Co facility in Jeddah.",
+      "client": "Rabiya Co",
+      "location": "Jeddah",
+      "startDate": "2023-09-01",
+      "endDate": "2023-12-20",
+      "status": "completed",
+      "category": "civil",
+      "budget": "2,200,000",
+      "images": [
+        "/images/projects/imgi_2_1.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "Site Development"
+      ],
+      "createdAt": "2023-08-20T12:00:00Z",
+      "updatedAt": "2023-12-20T15:30:00Z"
+    },
+    {
+      "id": "completed-9",
+      "title": "Basateen Foods Factory",
+      "description": "Basateen Foods Factory",
+      "detailedDescription": "Complete construction of Basateen Foods Factory for Binzarar Group in Yanbu.",
+      "client": "Binzarar Group",
+      "location": "Yanbu",
+      "startDate": "2023-10-01",
+      "endDate": "2024-01-31",
+      "status": "completed",
+      "category": "industrial",
+      "budget": "12,000,000",
+      "images": [
+        "/images/projects/imgi_3_2.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "Electro Mechanical Works",
+        "General Contracting"
+      ],
+      "createdAt": "2023-09-25T15:30:00Z",
+      "updatedAt": "2024-01-31T16:45:00Z"
+    },
+    {
+      "id": "completed-10",
+      "title": "Site Development And Piping Work - Rabiya Co",
+      "description": "Site Development And piping Work",
+      "detailedDescription": "Site development and piping work for Rabiya Co facility in Jeddah.",
+      "client": "Rabiya Co",
+      "location": "Jeddah",
+      "startDate": "2023-11-01",
+      "endDate": "2024-02-28",
+      "status": "completed",
+      "category": "civil",
+      "budget": "1,800,000",
+      "images": [
+        "/images/projects/imgi_4_3.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "Site Development"
+      ],
+      "createdAt": "2023-10-25T11:15:00Z",
+      "updatedAt": "2024-02-28T13:20:00Z"
+    },
+    {
+      "id": "completed-11",
+      "title": "Basateen Foods Factory - Binzarrar Group",
+      "description": "Basateen Foods Factory",
+      "detailedDescription": "Second phase of Basateen Foods Factory construction for Binzarrar Group in Yanbu.",
+      "client": "Binzarrar Group",
+      "location": "Yanbu",
+      "startDate": "2024-01-01",
+      "endDate": "2024-04-30",
+      "status": "completed",
+      "category": "industrial",
+      "budget": "8,500,000",
+      "images": [
+        "/images/projects/imgi_5_5.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "Electro Mechanical Works"
+      ],
+      "createdAt": "2023-12-20T14:00:00Z",
+      "updatedAt": "2024-04-30T12:30:00Z"
+    },
+    {
+      "id": "completed-12",
+      "title": "MEP Works - HVAC And Electrical - Modern Contracting",
+      "description": "MEP Works -HVAV And Electrical",
+      "detailedDescription": "HVAC and electrical works for Modern Contracting facility in Makka.",
+      "client": "Modern Contracting",
+      "location": "Makka",
+      "startDate": "2024-02-01",
+      "endDate": "2024-05-31",
+      "status": "completed",
+      "category": "mep",
+      "budget": "3,100,000",
+      "images": [
+        "/images/projects/imgi_6_6.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Electro Works"
+      ],
+      "createdAt": "2024-01-25T10:45:00Z",
+      "updatedAt": "2024-05-31T15:15:00Z"
+    },
+    {
+      "id": "completed-13",
+      "title": "Site Development And Electrical Work",
+      "description": "Site Development And Electrical Work",
+      "detailedDescription": "Site development and electrical work for ETA Co facility in Dammam.",
+      "client": "ETA Co",
+      "location": "Dammam",
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-30",
+      "status": "completed",
+      "category": "civil",
+      "budget": "2,400,000",
+      "images": [
+        "/images/projects/imgi_7_7.png"
+      ],
+      "services": [
+        "Civil Works",
+        "Electro Works"
+      ],
+      "createdAt": "2024-02-20T13:30:00Z",
+      "updatedAt": "2024-06-30T11:45:00Z"
+    },
+    {
+      "id": "completed-14",
+      "title": "Under Ground Piping RTR & FRP - Suliaman Qasumi",
+      "description": "Under Groung Piping RTR &FRP",
+      "detailedDescription": "Underground piping installation using RTR and FRP materials for Suliaman Qasumi facility in Taif.",
+      "client": "Suliaman Qasumi",
+      "location": "Taif",
+      "startDate": "2024-04-01",
+      "endDate": "2024-07-31",
+      "status": "completed",
+      "category": "civil",
+      "budget": "2,700,000",
+      "images": [
+        "/images/projects/imgi_8_12.png"
+      ],
+      "services": [
+        "Civil Works",
+        "Piping Systems"
+      ],
+      "createdAt": "2024-03-25T12:15:00Z",
+      "updatedAt": "2024-07-31T14:30:00Z"
+    },
+    {
+      "id": "completed-15",
+      "title": "Royal Commission Al Dana Mall",
+      "description": "Royal commission Al dana Mall",
+      "detailedDescription": "Construction of Royal Commission Al Dana Mall for Jameel Sayed in Yanbu.",
+      "client": "Jameel Sayed",
+      "location": "Yanbu",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-31",
+      "status": "completed",
+      "category": "commercial",
+      "budget": "15,000,000",
+      "images": [
+        "/images/projects/imgi_2_1.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "Electro Mechanical Works",
+        "General Contracting"
+      ],
+      "createdAt": "2024-04-20T15:00:00Z",
+      "updatedAt": "2024-08-31T16:20:00Z"
+    },
+    {
+      "id": "completed-16",
+      "title": "MEP Fire Fighting, Plumbing and Duct Works - ETA Co",
+      "description": "MEP Fire fighting< Plumbing and Duct works",
+      "detailedDescription": "Fire fighting, plumbing, and duct works for ETA Co facility in Madina.",
+      "client": "ETA Co",
+      "location": "Madina",
+      "startDate": "2024-06-01",
+      "endDate": "2024-09-30",
+      "status": "completed",
+      "category": "mep",
+      "budget": "2,900,000",
+      "images": [
+        "/images/projects/imgi_3_2.jpg"
+      ],
+      "services": [
+        "Electro Mechanical Works",
+        "Fire Fighting Systems"
+      ],
+      "createdAt": "2024-05-25T11:30:00Z",
+      "updatedAt": "2024-09-30T13:45:00Z"
+    },
+    {
+      "id": "completed-17",
+      "title": "MEP Electrical Works LV, MV, Cables",
+      "description": "MEP electrical Works LV,MV, Cables",
+      "detailedDescription": "Low voltage, medium voltage, and cable installation for Al Konaini facility in Jubail.",
+      "client": "Al Konaini",
+      "location": "Jubail",
+      "startDate": "2024-07-01",
+      "endDate": "2024-10-31",
+      "status": "completed",
+      "category": "mep",
+      "budget": "4,200,000",
+      "images": [
+        "/images/projects/imgi_4_3.jpg"
+      ],
+      "services": [
+        "Electro Works",
+        "Electro Mechanical Works"
+      ],
+      "createdAt": "2024-06-20T14:15:00Z",
+      "updatedAt": "2024-10-31T12:00:00Z"
+    },
+    {
+      "id": "completed-18",
+      "title": "Housing Project",
+      "description": "Housing project",
+      "detailedDescription": "Residential housing project for Al Mishel Contracting in Jubail.",
+      "client": "Al Mishel Contracting",
+      "location": "Jubail",
+      "startDate": "2024-08-01",
+      "endDate": "2024-11-30",
+      "status": "completed",
+      "category": "residential",
+      "budget": "6,500,000",
+      "images": [
+        "/images/projects/imgi_5_5.jpg"
+      ],
+      "services": [
+        "Civil Works",
+        "Electro Mechanical Works",
+        "General Contracting"
+      ],
+      "createdAt": "2024-07-25T16:30:00Z",
+      "updatedAt": "2024-11-30T15:15:00Z"
+    }
+  ]
+}

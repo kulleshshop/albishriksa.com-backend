@@ -1,0 +1,121 @@
+{
+  "clients": [
+    {
+      "id": "client-1",
+      "name": "Aramco",
+      "description": "Saudi Arabian Oil Company - Leading global integrated energy and chemicals company",
+      "website": "https://www.aramco.com",
+      "logo": "/uploads/clients/5.jpg",
+      "industry": "Oil & Gas",
+      "location": "Dhahran, Saudi Arabia",
+      "established": "1933",
+      "projects": [
+        "Oil Refinery Construction",
+        "Petrochemical Facility Development"
+      ],
+      "testimonial": "Mohammed Abdul Hamid Al-Bishri Company delivered exceptional results on our oil refinery project. Their expertise and professionalism exceeded our expectations.",
+      "contactPerson": "Ahmed Al-Aramco",
+      "contactEmail": "ahmed@aramco.com",
+      "contactPhone": "+966-13-874-0000",
+      "isActive": true,
+      "createdAt": "2023-01-10T10:00:00Z",
+      "updatedAt": "2023-12-20T15:30:00Z"
+    },
+    {
+      "id": "client-2",
+      "name": "Technip",
+      "description": "Leading engineering and technology company for the energy industry",
+      "website": "https://www.technip.com",
+      "logo": "/uploads/clients/6.jpg",
+      "industry": "Engineering & Technology",
+      "location": "Paris, France",
+      "established": "1958",
+      "projects": [
+        "Offshore Platform Construction",
+        "Energy Infrastructure Development"
+      ],
+      "testimonial": "The offshore platform project was completed with outstanding quality and attention to detail. We highly recommend their services for any energy infrastructure needs.",
+      "contactPerson": "Sarah Technip",
+      "contactEmail": "sarah@technip.com",
+      "contactPhone": "+33-1-47-78-21-21",
+      "isActive": true,
+      "createdAt": "2023-05-20T09:00:00Z",
+      "updatedAt": "2024-02-15T12:00:00Z"
+    },
+    {
+      "id": "client-3",
+      "name": "SABIC",
+      "description": "Saudi Basic Industries Corporation - Global leader in diversified chemicals",
+      "website": "https://www.sabic.com",
+      "logo": "/uploads/clients/8.jpg",
+      "industry": "Chemicals",
+      "location": "Riyadh, Saudi Arabia",
+      "established": "1976",
+      "projects": [
+        "Chemical Plant Construction",
+        "Petrochemical Infrastructure"
+      ],
+      "testimonial": "Their commitment to quality and timely delivery makes them our preferred construction partner. The chemical plant project is progressing excellently.",
+      "contactPerson": "Mohammed Al-SABIC",
+      "contactEmail": "mohammed@sabic.com",
+      "contactPhone": "+966-11-225-8000",
+      "isActive": true,
+      "createdAt": "2024-01-05T08:00:00Z",
+      "updatedAt": "2024-12-01T14:20:00Z"
+    },
+    {
+      "id": "client-4",
+      "name": "Samsung Engineering",
+      "description": "Global engineering and construction company specializing in industrial projects",
+      "website": "https://www.samsungengineering.com",
+      "logo": "/uploads/clients/9.jpg",
+      "industry": "Engineering & Construction",
+      "location": "Seoul, South Korea",
+      "established": "1970",
+      "projects": ["Industrial Plant Construction", "Engineering Services"],
+      "testimonial": "Their technical expertise and reliable service delivery have made them our trusted partner for all industrial construction needs.",
+      "contactPerson": "Kim Samsung",
+      "contactEmail": "kim@samsungengineering.com",
+      "contactPhone": "+82-2-2145-5114",
+      "isActive": true,
+      "createdAt": "2024-03-10T11:00:00Z",
+      "updatedAt": "2024-12-15T09:45:00Z"
+    },
+    {
+      "id": "client-5",
+      "name": "Fluor Corporation",
+      "description": "Global engineering and construction company providing services to government and private sector clients",
+      "website": "https://www.fluor.com",
+      "logo": "/uploads/clients/10.jpg",
+      "industry": "Engineering & Construction",
+      "location": "Irving, Texas, USA",
+      "established": "1912",
+      "projects": ["Industrial Infrastructure", "Energy Projects"],
+      "testimonial": "Fluor has been impressed with the quality of work and professional approach. Their expertise in industrial construction is exceptional.",
+      "contactPerson": "David Fluor",
+      "contactEmail": "david@fluor.com",
+      "contactPhone": "+1-469-398-7000",
+      "isActive": true,
+      "createdAt": "2024-06-15T10:30:00Z",
+      "updatedAt": "2024-12-20T16:15:00Z"
+    },
+    {
+      "id": "client-6",
+      "name": "Bechtel Corporation",
+      "description": "American engineering, construction, and project management company",
+      "website": "https://www.bechtel.com",
+      "logo": "/uploads/clients/11.jpg",
+      "industry": "Engineering & Construction",
+      "location": "Reston, Virginia, USA",
+      "established": "1898",
+      "projects": ["Infrastructure Development", "Industrial Construction"],
+      "testimonial": "Outstanding project management and construction quality. Their team delivered our infrastructure project ahead of schedule and within budget.",
+      "contactPerson": "Michael Bechtel",
+      "contactEmail": "michael@bechtel.com",
+      "contactPhone": "+1-571-392-6000",
+      "isActive": true,
+      "createdAt": "2024-08-20T14:00:00Z",
+      "updatedAt": "2024-12-22T11:30:00Z"
+    }
+  ]
+}
