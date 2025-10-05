@@ -2,6 +2,7 @@
   "name": "albasari-backend",
   "version": "1.0.0",
   "description": "JSON Web Server for Al-Bishri Company CMS",
+  "type": "module",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
