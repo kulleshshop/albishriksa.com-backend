@@ -1,0 +1,500 @@
+{
+  "services": [
+    {
+      "id": "electro-mechanical-works",
+      "title": "Electro Mechanical Works (HVAC)",
+      "shortTitle": "Electro Mechanical Works",
+      "description": "We have expert teams in all electro mechanical work. We have experienced engineers, foremen & technicians for the mechanical work in HVAC, fire fighting & electrical works.",
+      "detailedDescription": "All related work for installation of chillers, air handling units, exhaust fans, blowers, fresh air fans, ducting with insulation, & chill water piping with insulation & cladding, fire fighting pumps, fire fighting networks water transfer pumps, sewage pumps etc..",
+      "domainExpertise": "Mohammed Abdul Hamid Al-Bishri Company Electro Mechanical Est. understands the dynamics and intricacies of different Industries and has the expertise to provide optimal solutions for industry specific requirements.",
+      "industriesServed": [
+        "Banks",
+        "Builders",
+        "Cinema / Multiplexes",
+        "Dairy",
+        "Educational Institutions",
+        "Hospitals",
+        "Hotels",
+        "Industrial Applications",
+        "IT / ITES",
+        "Malls",
+        "Offices",
+        "Pharma",
+        "PSU / Government",
+        "Restaurants / Eateries",
+        "Showrooms / Retail Outlets",
+        "Telecom"
+      ],
+      "services": [
+        "All airconditioning and refrigeration systems maintenance",
+        "Chiller installation and maintenance",
+        "Air handling units installation",
+        "Exhaust fans and blowers installation",
+        "Fresh air fans installation",
+        "Ducting with insulation",
+        "Chill water piping with insulation & cladding",
+        "Fire fighting pumps installation",
+        "Fire fighting networks",
+        "Water transfer pumps",
+        "Sewage pumps installation"
+      ],
+      "images": [
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_2_1.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_3_2.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_4_3.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_5_4.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_6_5.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_7_6.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_8_7.png",
+        "/images/services/ELECTRO MECHANICAL WORKS (HVAC)/imgi_9_8.png"
+      ],
+      "icon": "Zap",
+      "category": "electrical"
+    },
+    {
+      "id": "energy-saving-solutions",
+      "title": "Energy Saving Solutions Electrical Works",
+      "shortTitle": "Energy Saving Solutions update",
+      "description": "Energy costs are on the rise, and facilities everywhere are looking to reduce energy consumption and the costs related to it.",
+      "detailedDescription": "We provide industrial energy savers. Mohammed Abdul Hamid Al-Bishri Company provides a complete turn-key energy conservation solution for corporations. Our extensive product line of energy saving products provides your corporation with a payback of 1 to 3 years ensuring an excellent return on investment.",
+      "keyBenefits": [
+        "Payback period of 1 to 3 years",
+        "Excellent return on investment",
+        "High quality products and outstanding support",
+        "Saving is 3 times cheaper than Generation of Electricity"
+      ],
+      "sectorsServed": ["Commercial", "Industrial", "Government"],
+      "images": [
+        "/images/services/Energy Saving Solutions Electrical Works/imgi_2_1.png",
+        "/images/services/Energy Saving Solutions Electrical Works/imgi_3_2.png",
+        "/images/services/Energy Saving Solutions Electrical Works/imgi_4_3.png",
+        "/images/services/Energy Saving Solutions Electrical Works/imgi_5_4.png",
+        "/images/services/Energy Saving Solutions Electrical Works/imgi_6_5.png"
+      ],
+      "icon": "Lightbulb",
+      "category": "electrical",
+      "services": [],
+      "updatedAt": "2025-09-29T09:01:57.549Z"
+    },
+    {
+      "id": "fiber-cable-pulling",
+      "title": "Fiber Cable Pulling Work",
+      "shortTitle": "Fiber Cable Pulling",
+      "description": "According to many experienced cable installers, fail to pull cable properly will eventually lead to a series of network problems and disasters.",
+      "detailedDescription": "Since installing cable is a routine yet fundamental task, its importance thus cannot be underestimated. Therefore, to ensure a smooth and efficient cable pulling process, installers should get fully prepared for the work, and take various factors into consideration to avoid damaging the cable.",
+      "services": [
+        "Fiber optic cable installation",
+        "Cable pulling preparation",
+        "Network cable installation",
+        "Cable termination",
+        "Cable testing and certification"
+      ],
+      "images": [
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_2_1.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_3_2.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_4_3.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_5_4.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_6_5.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_7_6.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_8_8.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_9_7.png",
+        "/images/services/FIBER OF CABLE PULLING WORK/imgi_10_9.png"
+      ],
+      "icon": "Cable",
+      "category": "electrical"
+    },
+    {
+      "id": "electro-works",
+      "title": "Electro Works",
+      "shortTitle": "Electro Works",
+      "description": "We provide supply and installation of transformers, transmission lines and termination, lighting and small power systems, lower current systems, among others",
+      "detailedDescription": "Lighting and small power systems that includes channeling and wiring, cabling and termination, main distribution frames (MDF), power factor correction capacitor banks including generator and ATS panel. Low current systems that includes channeling and wiring for CCTV, access control, gate barrier, structured cabling, lighting control, intercom, SMATV/MATV, PABGM, etc.",
+      "services": [
+        "Transformers supply and installation",
+        "Transmission lines and termination",
+        "Lighting and small power systems",
+        "Lower current systems",
+        "Channeling and wiring",
+        "Cabling and termination",
+        "Main distribution frames (MDF)",
+        "Power factor correction capacitor banks",
+        "Generator and ATS panel",
+        "CCTV systems",
+        "Access control systems",
+        "Gate barrier systems",
+        "Structured cabling",
+        "Lighting control systems",
+        "Intercom systems",
+        "SMATV/MATV systems",
+        "PABGM systems"
+      ],
+      "images": [
+        "/images/services/ELECTRO WORKS/imgi_2_1.png",
+        "/images/services/ELECTRO WORKS/imgi_3_2.png",
+        "/images/services/ELECTRO WORKS/imgi_4_3.png"
+      ],
+      "icon": "Zap",
+      "category": "electrical"
+    },
+    {
+      "id": "civil-works",
+      "title": "Civil Works",
+      "shortTitle": "Civil Works",
+      "description": "Well site Developments, Excavation and Backfilling Activities, Surveying works, Site grading, Filling and Compaction Works",
+      "detailedDescription": "Security Upgrading and fencing work for site lay down and camp, Concrete Foundation such as building works, road works and substation works, Concrete curbstone work, interlocks and concrete paving works, Road earth works and sub grade and road base laying works, Culverts and pipe bridge works, road earth works and temporary road works.",
+      "services": [
+        "Well site developments",
+        "Excavation and backfilling activities",
+        "Surveying works",
+        "Site grading",
+        "Filling and compaction works",
+        "Security upgrading and fencing work",
+        "Concrete foundation works",
+        "Building works",
+        "Road works",
+        "Substation works",
+        "Concrete curbstone work",
+        "Interlocks and concrete paving works",
+        "Road earth works",
+        "Sub grade and road base laying works",
+        "Culverts and pipe bridge works",
+        "Temporary road works",
+        "Residential, commercial and industrial building works",
+        "Excavation dewatering",
+        "Sheet piling",
+        "Compaction",
+        "Shuttering and concreting works",
+        "Reinforcement works",
+        "Scaffolding works",
+        "Finishing works",
+        "Sewer, raw waterline and other underground utilities work",
+        "Waterproofing and paintings",
+        "Existing facilities demolition/refurbishing",
+        "Pile cap (concrete) breaking works",
+        "Sheet pile installation works",
+        "Deep excavation works",
+        "Temporary office facilities works",
+        "Drainage works",
+        "Underground piping works",
+        "Cathodic protection works"
+      ],
+      "images": [
+        "/images/services/CIVIL WORKS/imgi_2_1.png",
+        "/images/services/CIVIL WORKS/imgi_3_2.png",
+        "/images/services/CIVIL WORKS/imgi_4_3.png",
+        "/images/services/CIVIL WORKS/imgi_5_4.png",
+        "/images/services/CIVIL WORKS/imgi_6_5.png",
+        "/images/services/CIVIL WORKS/imgi_7_6.png"
+      ],
+      "icon": "Building2",
+      "category": "construction"
+    },
+    {
+      "id": "generator-works",
+      "title": "Generator Works",
+      "shortTitle": "Generator Works",
+      "description": "We offer customized Preventative Maintenance (PM) programs to our customers.",
+      "detailedDescription": "Frequently, standby generator systems remain idle for long periods. Like any other equipment, industrial generator systems need to be periodically checked and undergo routine maintenance to ensure they are fully operational when needed. A power outage is not the time to discover your standby generator system isn't operational.",
+      "services": [
+        "Customized Preventative Maintenance (PM) programs",
+        "Standby generator system maintenance",
+        "Industrial generator system maintenance",
+        "Generator system operational checks",
+        "Routine maintenance services",
+        "Emergency generator services"
+      ],
+      "images": [
+        "/images/services/GENERATOR WORKS/Construction-Generator-Rental.webp"
+      ],
+      "icon": "Power",
+      "category": "electrical"
+    },
+    {
+      "id": "heat-exchangers",
+      "title": "Heat Exchangers",
+      "shortTitle": "Heat Exchangers",
+      "description": "Mohammed Abdul Hamid Al-Bishri Company Services has the capabilities to custom design and manufacture high quality heat exchangers of varying capacities and designs.",
+      "detailedDescription": "Using HTRI and Microprotol and manufacture high quality heat exchangers of varying capacities and designs using carbon steel, super duplex and titanium. Clad tube-sheets are becoming a common requirement in the oil & gas industry and many of our heat exchangers are now being delivered with Stainless Steel and Monel cladding.",
+      "capabilities": [
+        "Custom design using HTRI and Microprotol",
+        "Manufacture high quality heat exchangers",
+        "Varying capacities and designs",
+        "Carbon steel, super duplex and titanium materials",
+        "Clad tube-sheets",
+        "Stainless Steel and Monel cladding",
+        "Air coolers production",
+        "ASME 'U' Stamp Certificate holder",
+        "National Board 'R' Symbol authorization"
+      ],
+      "certifications": [
+        "ASME Section VIII Div I",
+        "National Board authorization",
+        "Lloyds certification",
+        "D.N.V. certification",
+        "A.B.S. certification"
+      ],
+      "images": ["/images/services/HEAT EXCHANGERS/heat-exchanger-img01.jpg"],
+      "icon": "Thermometer",
+      "category": "mechanical"
+    },
+    {
+      "id": "trading-services",
+      "title": "Trading and Material Supply",
+      "shortTitle": "Trading Services",
+      "description": "We have alliances with a diverse group of companies in Saudi Arabia and abroad, that are based on mutual understanding of building long-term stable relationships.",
+      "detailedDescription": "With that, we are able to provide quality, low-cost services to our customers. The array of best merit products supplied by us consists of Industrial Pipes & Fittings, Valves, Flanges, Structural Steel, Gratings, Equipments and Tools, Nuts & Bolts, etc.",
+      "products": {
+        "valves": ["Various types of industrial valves"],
+        "gaskets": ["Industrial gaskets and sealing materials"],
+        "flanges": ["Flanges & fittings for industrial applications"],
+        "fasteners": ["Nuts, bolts and fastening systems"],
+        "tools": {
+          "handTools": ["Hand Tools & Power Tools"],
+          "cuttingTools": ["Abrasive and Cutting Tools"],
+          "pneumatic": ["Pneumatic Systems"],
+          "hydraulic": ["Hydraulic Systems"]
+        },
+        "safety": ["Safety Products"],
+        "plates": {
+          "plates": ["Plates, sheets & Foils"],
+          "angleBar": ["Angle Bar"],
+          "beams": ["Beams I,U,H"]
+        },
+        "electrical": {
+          "conduits": ["Conduits & Fittings"],
+          "plugs": ["Plugs & Sockets"],
+          "control": ["Control Equipment"],
+          "accessories": ["Electrical Accessories"]
+        }
+      },
+      "clients": [
+        "Petrochemical companies",
+        "Refineries",
+        "Power projects",
+        "Water treatment plants",
+        "Engineering construction companies"
+      ],
+      "images": [
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_2_1.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_3_2.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_4_3.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_5_4.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_6_5.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_8_8.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_9_10.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_10_11.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_11_12.jpg",
+        "/images/services/TRADING AND MATERIAL SUPPLY/imgi_13_9.jpg"
+      ],
+      "icon": "Package",
+      "category": "supply"
+    },
+    {
+      "id": "heavy-equipment",
+      "title": "Heavy Equipment",
+      "shortTitle": "Heavy Equipment",
+      "description": "The unique demands of transporting products on a flat bed trailer require experienced people who know how to deal with that style of trailing equipment.",
+      "detailedDescription": "Whether you need to move construction material, production machinery or finished product, the flatbed experts at Mohammed Abdul Hamid Al-Bishri Company will make sure your shipment goes according to plan.",
+      "equipment": {
+        "lifting": [
+          "Hydraulic Cranes",
+          "Crawler Cranes",
+          "Boom Trucks",
+          "Forklift",
+          "Articulated and Telescopic Man lift",
+          "Mobile Cranes",
+          "Tower Cranes",
+          "Man Lifts",
+          "Telehandlers"
+        ],
+        "earthMoving": [
+          "Bulldozers",
+          "Graders",
+          "Wheel Loaders",
+          "Excavator",
+          "Rock Breakers",
+          "Dump Truck",
+          "Back-hoe Loaders"
+        ],
+        "transportation": [
+          "Flat Bed Trailers",
+          "Hydraulic Low Bed Trailers",
+          "33 Seated Coaster",
+          "15 Seated Hi Ace"
+        ]
+      },
+      "services": [
+        "Direct transportation to all major cities in the kingdom",
+        "Transportation to all gulf countries",
+        "Low bed trailer services",
+        "Safety precautions and awareness",
+        "In-house training for drivers",
+        "Quality, cost effective services"
+      ],
+      "images": [
+        "/images/services/Heavy Equipment/imgi_2_1-MOBILE-CRANE.jpg",
+        "/images/services/Heavy Equipment/imgi_3_2-ROUGH-TERRAIN-CRANES.jpg",
+        "/images/services/Heavy Equipment/imgi_4_3-CRAWLER-CRANES.jpg",
+        "/images/services/Heavy Equipment/imgi_5_4-CIVIL-EARTH-MOVING-EQUIPMENTS.jpg",
+        "/images/services/Heavy Equipment/imgi_6_5-FORKLIFTS.jpg",
+        "/images/services/Heavy Equipment/imgi_7_6-TOWER-LIGHTS.jpg",
+        "/images/services/Heavy Equipment/imgi_8_7-MANLIFTS.jpg",
+        "/images/services/Heavy Equipment/imgi_9_8-CONTAINERS.jpg",
+        "/images/services/Heavy Equipment/imgi_10_9-WELDING-MACHINE.jpg",
+        "/images/services/Heavy Equipment/imgi_11_10-BOOM-TRUCKS.jpg",
+        "/images/services/Heavy Equipment/imgi_12_11-COMPACTORS.jpg",
+        "/images/services/Heavy Equipment/imgi_13_12-POWER-SOLUTIONS.jpg",
+        "/images/services/Heavy Equipment/imgi_14_13-HEAVY-LIFTING-SOLUTIONS.jpg",
+        "/images/services/Heavy Equipment/imgi_15_14 AIR COMPRESSORS.jpg",
+        "/images/services/Heavy Equipment/imgi_16_15-LIGHT-TRANSPORTATIONS.jpg"
+      ],
+      "icon": "Truck",
+      "category": "equipment"
+    },
+    {
+      "id": "general-contracting",
+      "title": "General Contracting",
+      "shortTitle": "General Contracting",
+      "description": "We offer customized Preventative Maintenance (PM) programs to our customers.",
+      "detailedDescription": "Frequently, standby generator systems remain idle for long periods. Like any other equipment, industrial generator systems need to be periodically checked and undergo routine maintenance to ensure they are fully operational when needed.",
+      "services": [
+        "Customized Preventative Maintenance (PM) programs",
+        "Industrial generator system maintenance",
+        "Standby generator system checks",
+        "Routine maintenance services",
+        "Emergency response services"
+      ],
+      "images": [
+        "/images/services/General Contracting/imgi_2_1.jpg",
+        "/images/services/General Contracting/imgi_3_2.jpg",
+        "/images/services/General Contracting/imgi_4_3.jpg",
+        "/images/services/General Contracting/imgi_5_4.jpg"
+      ],
+      "icon": "Building2",
+      "category": "construction"
+    },
+    {
+      "id": "manpower-supply",
+      "title": "Human Resources",
+      "shortTitle": "Manpower Supply",
+      "description": "Mohammed Abdul Hamid Al-Bishri Company is engaged in supply of all categories of skilled, semi skilled and unskilled manpower for the clients with all degrees of disciplines without any delay.",
+      "detailedDescription": "The workers are recruited from various countries strictly giving preference to their educational qualifications and their personal merits. The company allows no reservations on these aspects regarding requirement, provided the candidate fulfill the criteria regarding education, experience, communication skills etc.",
+      "personnel": {
+        "qualifiedEngineers": [
+          "Mechanical Engineers",
+          "Piping Engineers",
+          "Planners",
+          "H.V.A.C Engineers",
+          "Civil Engineers",
+          "Instrumentation Engineers",
+          "Electrical Engineers",
+          "Material Engineers",
+          "Computer Engineers",
+          "Qa/qc Engineers",
+          "Construction Engineers",
+          "Safety Engineers"
+        ],
+        "qualifiedSkilled": [
+          "Welding Inspectors",
+          "Qa/qc ( Civil, Mechanical,Instrumentation )",
+          "Instrument Technicians",
+          "Millwright Technicians",
+          "Tic Welders ( Ss/cs )",
+          "Mig Welders",
+          "6g Welders",
+          "Wireman",
+          "Electricians",
+          "Sheet Metal",
+          "Structural Fabricator",
+          "Piping Fabricator",
+          "Machinist",
+          "Draftsman ( Elf, Civil, Mech )",
+          "Chemist"
+        ],
+        "supervisors": [
+          "Qualified Supervisors & Foremans",
+          "Piping Supervisors & Foreman's",
+          "Mechanical Supervisors & Foreman's",
+          "H.A.V.C Supervisors & Foreman's",
+          "Instrumentations Supervisors & Foreman's",
+          "Electrical Supervisors & Foreman's",
+          "Millwright Technician & Foreman's",
+          "Scaffolding Supervisors & Foreman's ( T.U.V Certified )",
+          "Welding Supervisors & Foreman's",
+          "Rigger Supervisors & Foreman's",
+          "H.A.V.C Foreman's"
+        ]
+      },
+      "images": [
+        "/images/services/Human Resources/imgi_2_1.png",
+        "/images/services/Human Resources/imgi_3_2.png",
+        "/images/services/Human Resources/imgi_4_3.png",
+        "/images/services/Human Resources/imgi_5_4.png"
+      ],
+      "icon": "Users",
+      "category": "manpower"
+    },
+    {
+      "id": "scaffolding-works",
+      "title": "Scaffolding Works",
+      "shortTitle": "Scaffolding Works",
+      "description": "We are the leading scaffolding contractor with more than 5 years of experiences in scaffolding Works.",
+      "detailedDescription": "We offer to all our clients' competitive rates together with the highest standard of work. Our work varies enormously from simple scaffolding, for a painting a private customer houses, up to the largest commercial and industrial scaffold projects.",
+      "services": [
+        "Simple scaffolding for private houses",
+        "Commercial scaffold projects",
+        "Industrial scaffold projects",
+        "Scaffolding hire for decoration",
+        "Redecoration scaffolding",
+        "Roofing scaffolding",
+        "Temporary roofing",
+        "Industrial tower scaffolding"
+      ],
+      "materials": {
+        "tubes": ["Scaffolding Tubes (Galvanized EN 10219)"],
+        "fittings": [
+          "Doubler Coupler (Drop Forged)",
+          "Swivel Coupler (Drop Forged)",
+          "Single coupler / Putlog coupler (Drop Forged)",
+          "BRC - Board Retaining Coupler (Drop Forged)",
+          "Girder Coupler (Drop Forged)",
+          "Sleeve Joint (Pressed)",
+          "Spigot / Joint Pin (Pressed)",
+          "Ladder Clamp / Bea"
+        ],
+        "accessories": [
+          "Aluminium Ladder",
+          "Base Plate",
+          "Universal Jack",
+          "Adjustable base Jack",
+          "Adjustable U-Head Jack",
+          "Castor Wheels (Rubber Tired)",
+          "Scaffolder tag & Holder"
+        ]
+      },
+      "images": [
+        "/images/services/Scaffolding Works/imgi_2_1.png",
+        "/images/services/Scaffolding Works/imgi_3_2.png",
+        "/images/services/Scaffolding Works/imgi_4_3.png",
+        "/images/services/Scaffolding Works/imgi_5_4.png"
+      ],
+      "icon": "Layers",
+      "category": "construction"
+    },
+    {
+      "id": "service-1759433084655",
+      "title": "asdfasf",
+      "shortTitle": "asdfasdf",
+      "description": "asdfasdf",
+      "detailedDescription": "asdfasdf",
+      "category": "construction",
+      "icon": "Wrench",
+      "images": [
+        "https://res.cloudinary.com/dabkjrfcz/image/upload/v1759433081/albasari/services/qkhld0tgscih8x7jbtuz.png"
+      ],
+      "services": ["Civil Works", "Fiber Cable Pulling Work"],
+      "createdAt": "2025-10-02T19:24:44.655Z",
+      "updatedAt": "2025-10-02T19:24:44.655Z"
+    }
+  ]
+}

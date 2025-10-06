@@ -7,32 +7,28 @@ const serviceSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    slug: {
-      type: String,
-      required: true,
-      unique: true,
-    },
+    slug: String,
     title: {
       type: String,
       required: true,
     },
+    shortTitle: String,
     description: {
       type: String,
       required: true,
     },
+    detailedDescription: String,
+    domainExpertise: String,
     icon: {
       type: String,
       required: true,
     },
-    image: {
-      type: String,
-      required: true,
-    },
-    features: [
-      {
-        type: String,
-      },
-    ],
+    image: String,
+    images: [String],
+    category: String,
+    industriesServed: [String],
+    services: [String],
+    features: [String],
     isActive: {
       type: Boolean,
       default: true,
