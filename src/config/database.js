@@ -1,70 +1,65 @@
 import mongoose from "mongoose";
 
-let isConnected = false;
+// Global connection cache for serverless environments
+let cached = global.mongoose;
 
-const connectDB = async (retries = 3) => {
-  // If already connected, return
-  if (isConnected && mongoose.connection.readyState === 1) {
-    console.log("✅ Using existing MongoDB connection");
-    return;
-  }
+if (!cached) {
+  cached = global.mongoose = { conn: null, promise: null };
+}
 
+const connectDB = async () => {
   // Check if MONGODB_URI is set
   if (!process.env.MONGODB_URI) {
     throw new Error("MONGODB_URI environment variable is not set");
   }
 
-  // Set mongoose options for better serverless handling
-  mongoose.set("strictQuery", false);
+  // If already connected, return the existing connection
+  if (cached.conn) {
+    console.log("✅ Using existing MongoDB connection");
+    return cached.conn;
+  }
 
-  for (let attempt = 1; attempt <= retries; attempt++) {
-    try {
-      console.log(
-        `🔄 Attempting MongoDB connection (attempt ${attempt}/${retries})...`
-      );
+  // If connection is in progress, wait for it
+  if (!cached.promise) {
+    console.log("🔄 Creating new MongoDB connection...");
 
-      const conn = await mongoose.connect(process.env.MONGODB_URI, {
-        serverSelectionTimeoutMS: 10000,
-        socketTimeoutMS: 45000,
-        maxPoolSize: 10,
-        minPoolSize: 1,
+    // Set mongoose options optimized for serverless
+    mongoose.set("strictQuery", false);
+
+    cached.promise = mongoose
+      .connect(process.env.MONGODB_URI, {
+        // Optimized for serverless environments
+        serverSelectionTimeoutMS: 5000, // Reduced from 10000
+        socketTimeoutMS: 30000, // Reduced from 45000
+        connectTimeoutMS: 10000, // Added explicit connect timeout
+        maxPoolSize: 1, // Reduced for serverless
+        minPoolSize: 0, // Allow connection to close
+        maxIdleTimeMS: 10000, // Close idle connections quickly
         retryWrites: true,
         retryReads: true,
-      });
-
-      isConnected = true;
-      console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
-      return conn;
-    } catch (error) {
-      console.error(
-        `❌ MongoDB Connection Error (attempt ${attempt}/${retries}): ${error.message}`
-      );
-
-      isConnected = false;
-
-      // If this is the last attempt, throw the error
-      if (attempt === retries) {
-        console.error(`❌ All connection attempts failed`);
+        // Buffer commands when not connected (important for serverless)
+        bufferCommands: true,
+        bufferMaxEntries: 0,
+      })
+      .then((mongoose) => {
+        console.log("✅ MongoDB Connected successfully");
+        return mongoose;
+      })
+      .catch((error) => {
+        console.error("❌ MongoDB Connection Error:", error.message);
+        cached.promise = null; // Reset promise on error
         throw error;
-      }
-
-      // Wait before retrying (exponential backoff)
-      const delay = Math.min(1000 * Math.pow(2, attempt - 1), 5000);
-      console.log(`⏳ Waiting ${delay}ms before retry...`);
-      await new Promise((resolve) => setTimeout(resolve, delay));
-    }
+      });
   }
+
+  try {
+    cached.conn = await cached.promise;
+  } catch (e) {
+    cached.promise = null;
+    throw e;
+  }
+
+  return cached.conn;
 };
-
-// Handle connection events
-mongoose.connection.on("connected", () => {
-  isConnected = true;
-  console.log("Mongoose connected to MongoDB");
-});
-
-mongoose.connection.on("disconnected", () => {
-  isConnected = false;
-  console.log("Mongoose disconnected from MongoDB");
-});
 
 export default connectDB;
