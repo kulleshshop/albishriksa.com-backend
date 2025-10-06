@@ -23,10 +23,12 @@ app.use(async (req, res, next) => {
     await connectDB();
     next();
   } catch (error) {
-    console.error("Database connection error:", error);
+    console.error("Database connection error:", error.message);
+    console.error("Full error:", error);
     res.status(503).json({
       success: false,
       message: "Database connection unavailable",
+      error: process.env.NODE_ENV === "development" ? error.message : undefined,
     });
   }
 });
