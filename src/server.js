@@ -278,9 +278,9 @@ app.get("/api/services", async (req, res) => {
   }
 });
 
-app.get("/api/services/:slug", async (req, res) => {
+app.get("/api/services/:id", async (req, res) => {
   try {
-    const service = await Service.findOne({ slug: req.params.slug });
+    const service = await Service.findOne({ id: req.params.id });
     if (service) {
       res.json({ success: true, data: service });
     } else {
