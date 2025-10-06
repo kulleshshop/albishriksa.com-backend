@@ -1,51 +1,28 @@
 import cors from "cors";
+import dotenv from "dotenv";
 import express from "express";
-import fs from "fs";
 import jwt from "jsonwebtoken";
-import path from "path";
-import { fileURLToPath } from "url";
+import connectDB from "./config/database.js";
+import Client from "./models/Client.js";
+import Project from "./models/Project.js";
+import Service from "./models/Service.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Load environment variables
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Connect to MongoDB
+connectDB();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-// JWT Secret (in production, use environment variable)
+// JWT Secret
 const JWT_SECRET =
   process.env.JWT_SECRET || "your-secret-key-change-in-production";
-
-// Data file paths
-const DATA_DIR = path.join(__dirname, "../data");
-const PROJECTS_FILE = path.join(DATA_DIR, "projects.json");
-const CLIENTS_FILE = path.join(DATA_DIR, "clients.json");
-const SERVICES_FILE = path.join(DATA_DIR, "services-data.json");
-
-// Helper function to read JSON data
-const readJsonFile = (filePath) => {
-  try {
-    const data = fs.readFileSync(filePath, "utf8");
-    return JSON.parse(data);
-  } catch (error) {
-    console.error(`Error reading ${filePath}:`, error);
-    return null;
-  }
-};
-
-// Helper function to write JSON data
-const writeJsonFile = (filePath, data) => {
-  try {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
-    return true;
-  } catch (error) {
-    console.error(`Error writing ${filePath}:`, error);
-    return false;
-  }
-};
 
 // Authentication middleware
 const authenticateToken = (req, res, next) => {
@@ -81,7 +58,7 @@ app.post("/api/auth/login", (req, res) => {
   const { email, password } = req.body;
 
   // In production, validate against database
-  const validEmail = process.env.CMS_EMAIL || "admin@albasari.com";
+  const validEmail = process.env.CMS_EMAIL || "info@albishriksa.com";
   const validPassword = process.env.CMS_PASSWORD || "admin123";
 
   if (email === validEmail && password === validPassword) {
@@ -100,256 +77,284 @@ app.post("/api/auth/login", (req, res) => {
 });
 
 // Projects API
-app.get("/api/projects", (req, res) => {
-  const data = readJsonFile(PROJECTS_FILE);
-  if (data) {
-    res.json({ success: true, data: data.projects });
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read projects data" });
+app.get("/api/projects", async (req, res) => {
+  try {
+    const projects = await Project.find().sort({ createdAt: -1 });
+    res.json({ success: true, data: projects });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch projects",
+      error: error.message,
+    });
   }
 });
 
-app.get("/api/projects/:id", (req, res) => {
-  const data = readJsonFile(PROJECTS_FILE);
-  if (data) {
-    const project = data.projects.find((p) => p.id === req.params.id);
+app.get("/api/projects/:id", async (req, res) => {
+  try {
+    const project = await Project.findOne({ id: req.params.id });
     if (project) {
       res.json({ success: true, data: project });
     } else {
       res.status(404).json({ success: false, message: "Project not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read projects data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch project",
+      error: error.message,
+    });
   }
 });
 
-app.post("/api/projects", authenticateToken, (req, res) => {
-  const data = readJsonFile(PROJECTS_FILE);
-  if (data) {
-    const newProject = {
+app.post("/api/projects", authenticateToken, async (req, res) => {
+  try {
+    const newProject = new Project({
       ...req.body,
-      id: `project-${Date.now()}`,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-    };
-    data.projects.push(newProject);
+      id: req.body.id || `project-${Date.now()}`,
+    });
+    await newProject.save();
+    res.json({
+      success: true,
+      data: newProject,
+      message: "Project created successfully",
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to create project",
+      error: error.message,
+    });
+  }
+});
 
-    if (writeJsonFile(PROJECTS_FILE, data)) {
+app.put("/api/projects/:id", authenticateToken, async (req, res) => {
+  try {
+    const project = await Project.findOneAndUpdate(
+      { id: req.params.id },
+      { ...req.body },
+      { new: true, runValidators: true }
+    );
+    if (project) {
       res.json({
         success: true,
-        data: newProject,
-        message: "Project created successfully",
+        data: project,
+        message: "Project updated successfully",
       });
     } else {
-      res
-        .status(500)
-        .json({ success: false, message: "Failed to save project" });
+      res.status(404).json({ success: false, message: "Project not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read projects data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to update project",
+      error: error.message,
+    });
   }
 });
 
-app.put("/api/projects/:id", authenticateToken, (req, res) => {
-  const data = readJsonFile(PROJECTS_FILE);
-  if (data) {
-    const projectIndex = data.projects.findIndex((p) => p.id === req.params.id);
-    if (projectIndex !== -1) {
-      data.projects[projectIndex] = {
-        ...data.projects[projectIndex],
-        ...req.body,
-        updatedAt: new Date().toISOString(),
-      };
-
-      if (writeJsonFile(PROJECTS_FILE, data)) {
-        res.json({
-          success: true,
-          data: data.projects[projectIndex],
-          message: "Project updated successfully",
-        });
-      } else {
-        res
-          .status(500)
-          .json({ success: false, message: "Failed to save project" });
-      }
+app.delete("/api/projects/:id", authenticateToken, async (req, res) => {
+  try {
+    const project = await Project.findOneAndDelete({ id: req.params.id });
+    if (project) {
+      res.json({ success: true, message: "Project deleted successfully" });
     } else {
       res.status(404).json({ success: false, message: "Project not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read projects data" });
-  }
-});
-
-app.delete("/api/projects/:id", authenticateToken, (req, res) => {
-  const data = readJsonFile(PROJECTS_FILE);
-  if (data) {
-    const projectIndex = data.projects.findIndex((p) => p.id === req.params.id);
-    if (projectIndex !== -1) {
-      data.projects.splice(projectIndex, 1);
-
-      if (writeJsonFile(PROJECTS_FILE, data)) {
-        res.json({ success: true, message: "Project deleted successfully" });
-      } else {
-        res
-          .status(500)
-          .json({ success: false, message: "Failed to delete project" });
-      }
-    } else {
-      res.status(404).json({ success: false, message: "Project not found" });
-    }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read projects data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete project",
+      error: error.message,
+    });
   }
 });
 
 // Clients API
-app.get("/api/clients", (req, res) => {
-  const data = readJsonFile(CLIENTS_FILE);
-  if (data) {
-    res.json({ success: true, data: data.clients });
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read clients data" });
+app.get("/api/clients", async (req, res) => {
+  try {
+    const clients = await Client.find().sort({ createdAt: -1 });
+    res.json({ success: true, data: clients });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch clients",
+      error: error.message,
+    });
   }
 });
 
-app.get("/api/clients/:id", (req, res) => {
-  const data = readJsonFile(CLIENTS_FILE);
-  if (data) {
-    const client = data.clients.find((c) => c.id === req.params.id);
+app.get("/api/clients/:id", async (req, res) => {
+  try {
+    const client = await Client.findOne({ id: req.params.id });
     if (client) {
       res.json({ success: true, data: client });
     } else {
       res.status(404).json({ success: false, message: "Client not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read clients data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch client",
+      error: error.message,
+    });
   }
 });
 
-app.post("/api/clients", authenticateToken, (req, res) => {
-  const data = readJsonFile(CLIENTS_FILE);
-  if (data) {
-    const newClient = {
+app.post("/api/clients", authenticateToken, async (req, res) => {
+  try {
+    const newClient = new Client({
       ...req.body,
-      id: `client-${Date.now()}`,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-    };
-    data.clients.push(newClient);
+      id: req.body.id || `client-${Date.now()}`,
+    });
+    await newClient.save();
+    res.json({
+      success: true,
+      data: newClient,
+      message: "Client created successfully",
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to create client",
+      error: error.message,
+    });
+  }
+});
 
-    if (writeJsonFile(CLIENTS_FILE, data)) {
+app.put("/api/clients/:id", authenticateToken, async (req, res) => {
+  try {
+    const client = await Client.findOneAndUpdate(
+      { id: req.params.id },
+      { ...req.body },
+      { new: true, runValidators: true }
+    );
+    if (client) {
       res.json({
         success: true,
-        data: newClient,
-        message: "Client created successfully",
+        data: client,
+        message: "Client updated successfully",
       });
     } else {
-      res
-        .status(500)
-        .json({ success: false, message: "Failed to save client" });
+      res.status(404).json({ success: false, message: "Client not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read clients data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to update client",
+      error: error.message,
+    });
   }
 });
 
-app.put("/api/clients/:id", authenticateToken, (req, res) => {
-  const data = readJsonFile(CLIENTS_FILE);
-  if (data) {
-    const clientIndex = data.clients.findIndex((c) => c.id === req.params.id);
-    if (clientIndex !== -1) {
-      data.clients[clientIndex] = {
-        ...data.clients[clientIndex],
-        ...req.body,
-        updatedAt: new Date().toISOString(),
-      };
-
-      if (writeJsonFile(CLIENTS_FILE, data)) {
-        res.json({
-          success: true,
-          data: data.clients[clientIndex],
-          message: "Client updated successfully",
-        });
-      } else {
-        res
-          .status(500)
-          .json({ success: false, message: "Failed to save client" });
-      }
+app.delete("/api/clients/:id", authenticateToken, async (req, res) => {
+  try {
+    const client = await Client.findOneAndDelete({ id: req.params.id });
+    if (client) {
+      res.json({ success: true, message: "Client deleted successfully" });
     } else {
       res.status(404).json({ success: false, message: "Client not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read clients data" });
-  }
-});
-
-app.delete("/api/clients/:id", authenticateToken, (req, res) => {
-  const data = readJsonFile(CLIENTS_FILE);
-  if (data) {
-    const clientIndex = data.clients.findIndex((c) => c.id === req.params.id);
-    if (clientIndex !== -1) {
-      data.clients.splice(clientIndex, 1);
-
-      if (writeJsonFile(CLIENTS_FILE, data)) {
-        res.json({ success: true, message: "Client deleted successfully" });
-      } else {
-        res
-          .status(500)
-          .json({ success: false, message: "Failed to delete client" });
-      }
-    } else {
-      res.status(404).json({ success: false, message: "Client not found" });
-    }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read clients data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete client",
+      error: error.message,
+    });
   }
 });
 
 // Services API
-app.get("/api/services", (req, res) => {
-  const data = readJsonFile(SERVICES_FILE);
-  if (data) {
-    res.json({ success: true, data: data.services });
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read services data" });
+app.get("/api/services", async (req, res) => {
+  try {
+    const services = await Service.find().sort({ createdAt: -1 });
+    res.json({ success: true, data: services });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch services",
+      error: error.message,
+    });
   }
 });
 
-app.get("/api/services/:slug", (req, res) => {
-  const data = readJsonFile(SERVICES_FILE);
-  if (data) {
-    const service = data.services.find((s) => s.slug === req.params.slug);
+app.get("/api/services/:slug", async (req, res) => {
+  try {
+    const service = await Service.findOne({ slug: req.params.slug });
     if (service) {
       res.json({ success: true, data: service });
     } else {
       res.status(404).json({ success: false, message: "Service not found" });
     }
-  } else {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to read services data" });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to fetch service",
+      error: error.message,
+    });
+  }
+});
+
+app.post("/api/services", authenticateToken, async (req, res) => {
+  try {
+    const newService = new Service({
+      ...req.body,
+      id: req.body.id || `service-${Date.now()}`,
+    });
+    await newService.save();
+    res.json({
+      success: true,
+      data: newService,
+      message: "Service created successfully",
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to create service",
+      error: error.message,
+    });
+  }
+});
+
+app.put("/api/services/:id", authenticateToken, async (req, res) => {
+  try {
+    const service = await Service.findOneAndUpdate(
+      { id: req.params.id },
+      { ...req.body },
+      { new: true, runValidators: true }
+    );
+    if (service) {
+      res.json({
+        success: true,
+        data: service,
+        message: "Service updated successfully",
+      });
+    } else {
+      res.status(404).json({ success: false, message: "Service not found" });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to update service",
+      error: error.message,
+    });
+  }
+});
+
+app.delete("/api/services/:id", authenticateToken, async (req, res) => {
+  try {
+    const service = await Service.findOneAndDelete({ id: req.params.id });
+    if (service) {
+      res.json({ success: true, message: "Service deleted successfully" });
+    } else {
+      res.status(404).json({ success: false, message: "Service not found" });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete service",
+      error: error.message,
+    });
   }
 });
 
