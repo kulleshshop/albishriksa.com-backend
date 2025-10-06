@@ -9,7 +9,8 @@
     "dev": "nodemon src/server.js",
     "seed": "node src/scripts/seed.js",
     "build": "echo 'No build step needed - using JavaScript directly'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "railway:deploy": "echo 'Deploy to Railway: https://railway.app' && echo '1. Connect GitHub repo' && echo '2. Set environment variables' && echo '3. Deploy automatically'"
   },
   "keywords": [
     "json-server",
