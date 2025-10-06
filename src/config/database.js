@@ -16,10 +16,21 @@ const connectDB = async () => {
 
     console.log("🔄 Connecting to MongoDB...");
 
-    // Simple connection options for Render
+    // Connection options optimized for Render + MongoDB Atlas
     await mongoose.connect(process.env.MONGODB_URI, {
       serverSelectionTimeoutMS: 10000,
       socketTimeoutMS: 45000,
+      connectTimeoutMS: 10000,
+      // SSL/TLS options for better compatibility
+      tls: true,
+      tlsAllowInvalidCertificates: false,
+      tlsAllowInvalidHostnames: false,
+      // Retry options
+      retryWrites: true,
+      retryReads: true,
+      // Connection pool options
+      maxPoolSize: 10,
+      minPoolSize: 1,
     });
 
     console.log("✅ MongoDB Connected successfully");
