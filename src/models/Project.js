@@ -30,7 +30,7 @@ const projectSchema = new mongoose.Schema(
     image: String,
     status: {
       type: String,
-      enum: ["completed", "ongoing", "in-progress"],
+      enum: ["completed", "ongoing", "in-progress", "planned"],
       default: "completed",
     },
     year: String,
