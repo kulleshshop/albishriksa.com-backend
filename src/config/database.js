@@ -23,17 +23,14 @@ const connectDB = async (retries = 3) => {
         `🔄 Attempting MongoDB connection (attempt ${attempt}/${retries})...`
       );
 
-      const conn = await mongoose.connect(
-        "mongodb+srv://kulleshshopping_db_user:2thgQRLx6HCnjQWC@albaseri.gxpehzv.mongodb.net/?retryWrites=true&w=majority&appName=albaseri",
-        {
-          serverSelectionTimeoutMS: 10000,
-          socketTimeoutMS: 45000,
-          maxPoolSize: 10,
-          minPoolSize: 1,
-          retryWrites: true,
-          retryReads: true,
-        }
-      );
+      const conn = await mongoose.connect(process.env.MONGODB_URI, {
+        serverSelectionTimeoutMS: 10000,
+        socketTimeoutMS: 45000,
+        maxPoolSize: 10,
+        minPoolSize: 1,
+        retryWrites: true,
+        retryReads: true,
+      });
 
       isConnected = true;
       console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
